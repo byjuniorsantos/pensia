@@ -19,8 +19,11 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Sobre", href: "#sobre" },
+    { name: "Benefícios", href: "#beneficiarios" },
     { name: "Serviços", href: "#servicos" },
     { name: "Nossa Visão", href: "#visao" },
+    { name: "Por Que Nós", href: "#porque-escolher" },
+    { name: "Depoimentos", href: "#depoimentos" },
     { name: "Contato", href: "#contato" },
   ];
 
@@ -34,7 +37,7 @@ const Navbar = () => {
         <Logo />
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden lg:flex space-x-6">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -49,14 +52,14 @@ const Navbar = () => {
         {/* Mobile Navigation Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-white"
+          className="lg:hidden text-white"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="fixed inset-0 top-16 glass md:hidden z-50 flex flex-col">
+          <div className="fixed inset-0 top-16 glass lg:hidden z-50 flex flex-col">
             <nav className="flex flex-col items-center space-y-6 py-8">
               {navLinks.map((link) => (
                 <a

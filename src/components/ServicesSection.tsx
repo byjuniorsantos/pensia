@@ -1,26 +1,52 @@
 
-import { LineChart, FileSpreadsheet, BrainCircuit } from "lucide-react";
 import { useState } from "react";
+import { 
+  LineChart, 
+  FileSpreadsheet, 
+  BrainCircuit, 
+  Database, 
+  TrendingUp, 
+  Headphones 
+} from "lucide-react";
 
 const services = [
   {
     id: 1,
-    title: "Dashboards e relatórios",
-    tools: "Power BI, Looker Studio e Tableau",
-    description: "Transforme seus dados em visualizações interativas e relatórios dinâmicos para facilitar a tomada de decisões.",
+    title: "Desenvolvimento de dashboards",
+    tools: "Power BI, Looker Studio, Excel e Tableau",
+    description: "Criamos dashboards personalizados nas principais plataformas para transformar seus dados em visualizações interativas.",
     icon: <LineChart size={32} />,
   },
   {
     id: 2,
-    title: "Automação de relatórios e insights",
-    description: "Automatize a coleta, tratamento e distribuição de dados, economizando tempo e reduzindo erros humanos.",
-    icon: <FileSpreadsheet size={32} />,
+    title: "Consultoria em análise de dados",
+    description: "Orientamos sua equipe na interpretação e uso estratégico dos dados para tomada de decisões mais eficientes.",
+    icon: <BrainCircuit size={32} />,
   },
   {
     id: 3,
-    title: "Consultoria em dados e inteligência de negócios",
-    description: "Orientação especializada para identificar oportunidades de melhoria e estratégias baseadas em dados.",
-    icon: <BrainCircuit size={32} />,
+    title: "Automatização de relatórios",
+    description: "Elimine o trabalho manual com relatórios automáticos que economizam tempo e reduzem erros.",
+    icon: <FileSpreadsheet size={32} />,
+  },
+  {
+    id: 4,
+    title: "Integração de bancos de dados",
+    tools: "Firebird, MySQL, PostgreSQL e outros",
+    description: "Integramos diferentes fontes de dados para uma visão unificada e completa do seu negócio.",
+    icon: <Database size={32} />,
+  },
+  {
+    id: 5,
+    title: "Geração de insights e previsões",
+    description: "Utilizamos modelos de previsão para antecipar tendências e orientar decisões proativas.",
+    icon: <TrendingUp size={32} />,
+  },
+  {
+    id: 6,
+    title: "Suporte técnico e treinamento",
+    description: "Oferecemos treinamento personalizado e suporte contínuo para maximizar o valor das suas soluções de dados.",
+    icon: <Headphones size={32} />,
   },
 ];
 
@@ -44,7 +70,7 @@ const ServicesSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((service) => (
             <div 
               key={service.id}
