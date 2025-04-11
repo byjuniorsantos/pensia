@@ -46,18 +46,14 @@ const WhyChooseUsSection = () => {
             Por que escolher a <span className="text-pensia-purple">PensIA</span>?
           </h2>
           
-          {/* Marketing phrase with visual emphasis */}
-          <div 
-            className="glass-card p-6 md:p-8 max-w-4xl mx-auto mb-16 purple-glow animate-fade-in border border-pensia-purple/20"
-          >
-            <blockquote className="text-xl md:text-2xl font-medium text-balance">
-              <p className="mb-4">
-                "Porque enquanto sua concorrência ainda tenta entender os dados, você já estará tomando decisões estratégicas com eles."
-              </p>
-              <p>
-                "A PensIA transforma números em vantagem competitiva — com dashboards poderosos, automação real e insights que colocam sua empresa à frente do mercado."
-              </p>
-            </blockquote>
+          {/* Marketing phrase with subtle text glow */}
+          <div className="max-w-4xl mx-auto mb-16 text-balance animate-fade-in">
+            <p className="text-lg mb-4 text-gray-300" style={{ textShadow: "0 0 10px rgba(155, 135, 245, 0.3)" }}>
+              "Porque enquanto sua concorrência ainda tenta entender os dados, você já estará tomando decisões estratégicas com eles."
+            </p>
+            <p className="text-lg text-gray-300" style={{ textShadow: "0 0 10px rgba(155, 135, 245, 0.3)" }}>
+              "A PensIA transforma números em vantagem competitiva — com dashboards poderosos, automação real e insights que colocam sua empresa à frente do mercado."
+            </p>
           </div>
         </div>
         
