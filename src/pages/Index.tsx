@@ -36,14 +36,24 @@ const Index = () => {
       });
     }, observerOptions);
     
+    // Observe both sections and specific elements with animation classes
     const sections = document.querySelectorAll("section > div");
+    const animatedElements = document.querySelectorAll(".glass-card.purple-glow");
+    
     sections.forEach((section) => {
       observer.observe(section);
+    });
+    
+    animatedElements.forEach((element) => {
+      observer.observe(element);
     });
     
     return () => {
       sections.forEach((section) => {
         observer.unobserve(section);
+      });
+      animatedElements.forEach((element) => {
+        observer.unobserve(element);
       });
     };
   }, []);

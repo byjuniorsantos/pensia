@@ -45,6 +45,20 @@ const WhyChooseUsSection = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 heading-glow">
             Por que escolher a <span className="text-pensia-purple">PensIA</span>?
           </h2>
+          
+          {/* Marketing phrase with visual emphasis */}
+          <div 
+            className="glass-card p-6 md:p-8 max-w-4xl mx-auto mb-16 purple-glow animate-fade-in border border-pensia-purple/20"
+          >
+            <blockquote className="text-xl md:text-2xl font-medium text-balance">
+              <p className="mb-4">
+                "Porque enquanto sua concorrência ainda tenta entender os dados, você já estará tomando decisões estratégicas com eles."
+              </p>
+              <p>
+                "A PensIA transforma números em vantagem competitiva — com dashboards poderosos, automação real e insights que colocam sua empresa à frente do mercado."
+              </p>
+            </blockquote>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -118,3 +132,4 @@ const WhyChooseUsSection = () => {
 };
 
 export default WhyChooseUsSection;
+
