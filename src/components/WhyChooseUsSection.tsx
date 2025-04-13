@@ -47,11 +47,12 @@ const WhyChooseUsSection = () => {
           </h2>
           
           {/* Marketing phrase with subtle text glow */}
-          <div className="max-w-4xl mx-auto mb-16 text-balance animate-fade-in">
-            <p className="text-lg text-gray-300" style={{ textShadow: "0 0 10px rgba(155, 135, 245, 0.3)" }}>
-              "A PensIA transforma números em vantagem competitiva — com dashboards poderosos, automação real e insights que colocam sua empresa à frente do mercado."
-            </p>
-          </div>
+          <p 
+            className="text-lg text-gray-300 mb-16 mx-auto max-w-4xl text-balance animate-fade-in" 
+            style={{ textShadow: "0 0 10px rgba(155, 135, 245, 0.3)" }}
+          >
+            A PensIA transforma números em vantagem competitiva com dashboards poderosos, automação real e insights que colocam sua empresa à frente do mercado.
+          </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -125,4 +126,3 @@ const WhyChooseUsSection = () => {
 };
 
 export default WhyChooseUsSection;
-
